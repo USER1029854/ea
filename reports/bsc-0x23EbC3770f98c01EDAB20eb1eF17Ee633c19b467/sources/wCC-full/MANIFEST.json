@@ -1,0 +1,178 @@
+[
+  {
+    "path": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessageLibManager.sol",
+    "pinned_version": "v2.3.44"
+  },
+  {
+    "path": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessagingChannel.sol",
+    "pinned_version": "v2.3.44"
+  },
+  {
+    "path": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessagingComposer.sol",
+    "pinned_version": "v2.3.44"
+  },
+  {
+    "path": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessagingContext.sol",
+    "pinned_version": "v2.3.44"
+  },
+  {
+    "path": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ILayerZeroEndpointV2.sol",
+    "pinned_version": "v2.3.44"
+  },
+  {
+    "path": "@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/interfaces/IOAppCore.sol",
+    "pinned_version": "v2.3.44"
+  },
+  {
+    "path": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ILayerZeroReceiver.sol",
+    "pinned_version": "v2.3.44"
+  },
+  {
+    "path": "@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/interfaces/IOAppReceiver.sol",
+    "pinned_version": "v2.3.44"
+  },
+  {
+    "path": "@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/interfaces/IOAppOptionsType3.sol",
+    "pinned_version": "v2.3.44"
+  },
+  {
+    "path": "@openzeppelin/contracts/utils/Context.sol",
+    "pinned_version": "v5.4.0"
+  },
+  {
+    "path": "@openzeppelin/contracts/access/Ownable.sol",
+    "pinned_version": "v5.4.0"
+  },
+  {
+    "path": "@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/libs/OAppOptionsType3.sol",
+    "pinned_version": "v2.3.44"
+  },
+  {
+    "path": "@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/OAppCore.sol",
+    "pinned_version": "v2.3.44"
+  },
+  {
+    "path": "@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/OAppReceiver.sol",
+    "pinned_version": "v2.3.44"
+  },
+  {
+    "path": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+    "pinned_version": "v5.4.0"
+  },
+  {
+    "path": "@openzeppelin/contracts/interfaces/IERC165.sol",
+    "pinned_version": "v5.4.0"
+  },
+  {
+    "path": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+    "pinned_version": "v5.4.0"
+  },
+  {
+    "path": "@openzeppelin/contracts/interfaces/IERC20.sol",
+    "pinned_version": "v5.4.0"
+  },
+  {
+    "path": "@openzeppelin/contracts/interfaces/IERC1363.sol",
+    "pinned_version": "v5.4.0"
+  },
+  {
+    "path": "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+    "pinned_version": "v5.4.0"
+  },
+  {
+    "path": "@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/OAppSender.sol",
+    "pinned_version": "v2.3.44"
+  },
+  {
+    "path": "@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/OApp.sol",
+    "pinned_version": "v2.3.44"
+  },
+  {
+    "path": "@layerzerolabs/lz-evm-oapp-v2/contracts/oft/interfaces/IOFT.sol",
+    "pinned_version": "v2.3.44"
+  },
+  {
+    "path": "@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/interfaces/IOAppMsgInspector.sol",
+    "pinned_version": "v2.3.44"
+  },
+  {
+    "path": "@layerzerolabs/lz-evm-oapp-v2/contracts/oft/libs/OFTComposeMsgCodec.sol",
+    "pinned_version": "v2.3.44"
+  },
+  {
+    "path": "@layerzerolabs/lz-evm-oapp-v2/contracts/oft/libs/OFTMsgCodec.sol",
+    "pinned_version": "v2.3.44"
+  },
+  {
+    "path": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessageLib.sol",
+    "pinned_version": "v2.3.44"
+  },
+  {
+    "path": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ISendLib.sol",
+    "pinned_version": "v2.3.44"
+  },
+  {
+    "path": "@layerzerolabs/lz-evm-protocol-v2/contracts/libs/AddressCast.sol",
+    "pinned_version": "v2.3.44"
+  },
+  {
+    "path": "@layerzerolabs/lz-evm-protocol-v2/contracts/messagelib/libs/PacketV1Codec.sol",
+    "pinned_version": "v2.3.44"
+  },
+  {
+    "path": "@layerzerolabs/lz-evm-oapp-v2/contracts/precrime/libs/Packet.sol",
+    "pinned_version": "v2.3.44"
+  },
+  {
+    "path": "@layerzerolabs/lz-evm-oapp-v2/contracts/precrime/interfaces/IOAppPreCrimeSimulator.sol",
+    "pinned_version": "v2.3.44"
+  },
+  {
+    "path": "@layerzerolabs/lz-evm-oapp-v2/contracts/precrime/interfaces/IPreCrime.sol",
+    "pinned_version": "v2.3.44"
+  },
+  {
+    "path": "@layerzerolabs/lz-evm-oapp-v2/contracts/precrime/OAppPreCrimeSimulator.sol",
+    "pinned_version": "v2.3.44"
+  },
+  {
+    "path": "@layerzerolabs/lz-evm-oapp-v2/contracts/oft/OFTCore.sol",
+    "pinned_version": "v2.3.44"
+  },
+  {
+    "path": "@openzeppelin/contracts/interfaces/draft-IERC6093.sol",
+    "pinned_version": "v5.4.0"
+  },
+  {
+    "path": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+    "pinned_version": "v5.4.0"
+  },
+  {
+    "path": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+    "pinned_version": "v5.4.0"
+  },
+  {
+    "path": "@layerzerolabs/lz-evm-oapp-v2/contracts/oft/OFT.sol",
+    "pinned_version": "v2.3.44"
+  },
+  {
+    "path": "@openzeppelin/contracts/access/IAccessControl.sol",
+    "pinned_version": "v5.4.0"
+  },
+  {
+    "path": "@openzeppelin/contracts/utils/introspection/ERC165.sol",
+    "pinned_version": "v5.4.0"
+  },
+  {
+    "path": "@openzeppelin/contracts/access/AccessControl.sol",
+    "pinned_version": "v5.4.0"
+  },
+  {
+    "path": "@openzeppelin/contracts/utils/Pausable.sol",
+    "pinned_version": "v5.4.0"
+  },
+  {
+    "path": "src/wCC.sol",
+    "pinned_version": null
+  }
+]
