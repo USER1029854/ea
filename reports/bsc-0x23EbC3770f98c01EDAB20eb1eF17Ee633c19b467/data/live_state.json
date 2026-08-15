@@ -1,0 +1,153 @@
+{
+  "captured_at_utc": "2026-08-15",
+  "captured_at_block": {
+    "bsc": 116120311,
+    "base": "latest at capture time, exact height not recorded"
+  },
+  "methodology": "All values below were read directly on-chain via eth_call against public RPC endpoints (bsc-rpc.publicnode.com, mainnet.base.org), independent of any block explorer cache. Etherscan V2 API (chainid-addressed) was used only for verified-source retrieval; its account/proxy/logs modules returned 'Free API access is not supported for this chain' for chain 56 under the API key supplied for this task, so all live reads were done via raw JSON-RPC eth_call instead.",
+  "chain_presence_scan": {
+    "note": "An initial broad scan across 32 mainnets using Etherscan's eth_getCode proxy passthrough produced false positives (chain-restriction error strings were long enough to be misread as bytecode). This was caught and every chain below was re-verified with a direct eth_getCode call to a public RPC.",
+    "target_pool_0x23EbC377...": {
+      "ethereum_1": "no code",
+      "bsc_56": "6167 bytes (contract present)",
+      "base_8453": "no code",
+      "optimism_10": "no code",
+      "avalanche_43114": "no code",
+      "celo_42220": "no code",
+      "arbitrum_42161": "no code",
+      "polygon_137": "RPC error (tenant/key issue on public endpoint used) - inconclusive, not confirmed either way"
+    },
+    "wcc_token_0x6050D829...": {
+      "ethereum_1": "no code",
+      "bsc_56": "15044 bytes (contract present)",
+      "base_8453": "15044 bytes (contract present) - byte-for-byte IDENTICAL to BSC copy",
+      "optimism_10": "no code",
+      "avalanche_43114": "no code",
+      "celo_42220": "no code",
+      "arbitrum_42161": "no code",
+      "polygon_137": "RPC error - inconclusive"
+    }
+  },
+  "staking_pool": {
+    "address": "0x23EbC3770f98c01EDAB20eb1eF17Ee633c19b467",
+    "chain": "BNB Smart Chain (56)",
+    "owner": "0x0a06128B72Ef14F78B51a3Be776b9f2bdbC26b5b",
+    "paused": false,
+    "wccToken_immutable": "0x6050D829F5a5E0eA758D8357DDcdeC1381699248",
+    "rewardToken_current": "0x6050D829F5a5E0eA758D8357DDcdeC1381699248",
+    "rewardToken_at_deploy": "0x6050D829F5a5E0eA758D8357DDcdeC1381699248",
+    "rewardToken_changed_since_deploy": false,
+    "depositFeeBps_current": 30,
+    "depositFeeBps_at_deploy": 30,
+    "depositFeeBps_max_allowed": 1000,
+    "poolCap": 0,
+    "walletCap": 0,
+    "totalStaked_wei": "2572511974888450738909892",
+    "totalStaked_wcc": 2572511.974888451,
+    "totalFeesCollected_wei": "9847836175776486859061",
+    "totalFeesCollected_wcc": 9847.836175776487,
+    "totalClaimed_wei": "52758897156494430206710",
+    "totalClaimed_wcc": 52758.89715649443,
+    "rewardPerPeriod_current_wcc": 33,
+    "rewardPerPeriod_at_deploy_wcc": 100,
+    "rewardPerPeriod_changed_since_deploy": true,
+    "rewardPeriod_seconds": 14400,
+    "rewardStartTime_utc": "2025-12-30T18:22:28Z",
+    "lastRewardUpdateTime_utc": "2026-08-14T18:34:50Z",
+    "wcc_balance_held_by_pool_wei": "2589400913907732795562243",
+    "wcc_balance_held_by_pool": 2589400.913907732,
+    "reserved_principal_plus_fees": 2582359.811064227,
+    "excess_currently_sweepable_via_pause_plus_withdrawRemainingRewards": 7041.102843505569,
+    "note_on_excess": "This is the WCC sitting in the contract beyond what is owed back to depositors as principal/fees. It is exactly the amount withdrawRemainingRewards() would currently pay the owner if they called pause() then withdrawRemainingRewards() at time of capture. It moves constantly as rewards accrue/get claimed and as owner tops up the reward pool."
+  },
+  "wcc_token_bsc": {
+    "address": "0x6050D829F5a5E0eA758D8357DDcdeC1381699248",
+    "name": "Wrapped Canton Coin",
+    "symbol": "wCC",
+    "decimals": 18,
+    "owner_Ownable": "0x0a06128B72Ef14F78B51a3Be776b9f2bdbC26b5b",
+    "paused": false,
+    "totalSupply_wcc": 4041180.415183074,
+    "layerzero_endpoint": "0x1a44076050125825900e736c501f859c50fE728c",
+    "roles_held_by_owner_EOA": {
+      "DEFAULT_ADMIN_ROLE": true,
+      "MINTER_ROLE": false,
+      "BURNER_ROLE": false,
+      "PAUSER_ROLE": true
+    },
+    "roles_held_by_staking_pool": {
+      "DEFAULT_ADMIN_ROLE": false,
+      "MINTER_ROLE": false,
+      "BURNER_ROLE": false
+    },
+    "minter_burner_role_holder": "UNRESOLVED - not the owner EOA, not the staking pool. AccessControl is non-enumerable and historical RoleGranted logs were not retrievable in this session (see gaps).",
+    "layerzero_configured_peers": {
+      "note": "Checked all major LZ V2 EIDs against wCC.peers(uint32). Only one peer is currently configured.",
+      "base_eid_30184": "0x6050D829F5a5E0eA758D8357DDcdeC1381699248 (self, on Base) - CONFIGURED",
+      "ethereum_avalanche_optimism_arbitrum_polygon_celo_gnosis": "0x0000000000000000000000000000000000000000 - not configured"
+    }
+  },
+  "wcc_token_base": {
+    "address": "0x6050D829F5a5E0eA758D8357DDcdeC1381699248",
+    "bytecode_identical_to_bsc": true,
+    "owner_Ownable": "0x0a06128B72Ef14F78B51a3Be776b9f2bdbC26b5b",
+    "paused": false,
+    "totalSupply_wcc": 2288.25756,
+    "layerzero_endpoint": "0x1a44076050125825900e736c501f859c50fE728c",
+    "roles_held_by_owner_EOA": {
+      "DEFAULT_ADMIN_ROLE": true,
+      "MINTER_ROLE": false,
+      "BURNER_ROLE": false,
+      "PAUSER_ROLE": true
+    },
+    "verification_status_on_basescan": "unverified (compiled bytecode only); identity established here by exact bytecode match against the BSC copy, which IS verified"
+  },
+  "owner_eoa": {
+    "address": "0x0a06128B72Ef14F78B51a3Be776b9f2bdbC26b5b",
+    "is_contract": false,
+    "eth_getCode": "0x (confirms plain EOA, no multisig/timelock/smart-account code)",
+    "bnb_balance": 0.11078340415735814,
+    "transaction_count_nonce_bsc": 13,
+    "note": "Deployer-vs-current-owner history, full transaction history, and any other chains/contracts this key controls could not be established - see gaps."
+  },
+  "dex_liquidity": {
+    "source": "DexScreener public API, cross-checked with direct eth_call reads against the primary pool",
+    "wcc_price_usd_at_capture": 0.09853,
+    "fdv_usd": 398201,
+    "total_liquidity_across_all_pools_usd": 69268.60,
+    "pools": [
+      {"chain": "bsc", "dex": "pancakeswap (v3)", "pair": "wCC/USDT", "address": "0x02D63d1339cEA5829CCb7342755dB4ED57398321", "liquidity_usd": 65982.49, "role": "primary market", "token0_verified_as_canonical_bsc_usdt": true},
+      {"chain": "bsc", "dex": "pancakeswap", "pair": "wCC/USD1", "address": "0x5CFE20e6c9A7159E1FBE3b6E36F85F5DC355cA3a", "liquidity_usd": 1654.84},
+      {"chain": "bsc", "dex": "pancakeswap", "pair": "wCC/WBNB", "address": "0x4d4A692FD07Fd920F7cD30693aE8bd1b4CAF41EB", "liquidity_usd": 1319.20},
+      {"chain": "bsc", "dex": "pancakeswap", "pair": "wCC/WBNB", "address": "0xE0c203DeDeFe496D232ECbD7A355fFa11C1c078a", "liquidity_usd": 5.92},
+      {"chain": "bsc", "dex": "pancakeswap", "pair": "wCC/USDT", "address": "0x9ACB279c688e6034Ad79E0E5dD8d3A71F8063205", "liquidity_usd": 0.40},
+      {"chain": "base", "dex": "aerodrome", "pair": "wCC/USDC", "address": "0xeF547D86e6e276f071A951F3b24BA085FEfe2433", "liquidity_usd": 158.60},
+      {"chain": "base", "dex": "aerodrome", "pair": "wCC/WETH", "address": "0x0293ECF9223fF760a2538613b4e51f15538e4F81", "liquidity_usd": 147.15}
+    ],
+    "primary_pool_real_balances": {
+      "address": "0x02D63d1339cEA5829CCb7342755dB4ED57398321",
+      "usdt_balance": 1354.87,
+      "wcc_balance": 655878.96,
+      "note": "This is a PancakeSwap V3 concentrated-liquidity pool, so the raw token balance ratio does NOT represent spot price (LPs can be concentrated off the current tick). Spot price was taken from slot0()/DexScreener, not from this ratio."
+    }
+  },
+  "defillama_cross_check": {
+    "protocol_slug": "ea-finance",
+    "confirmed_name": "EA Finance",
+    "confirmed_chain": "Binance (BSC)",
+    "live_tvl_usd_at_capture": 251417.33561492583,
+    "independently_recomputed_tvl_usd": 253469.6,
+    "agreement": "within ~1%, computed independently from raw on-chain totalStaked x DexScreener spot price",
+    "adapter_source": "https://raw.githubusercontent.com/DefiLlama/DefiLlama-Adapters/main/projects/ea-finance/index.js",
+    "adapter_tracked_addresses": [
+      "0x23EbC3770f98c01EDAB20eb1eF17Ee633c19b467",
+      "0x6050D829F5a5E0eA758D8357DDcdeC1381699248"
+    ],
+    "adapter_tvl_start_timestamp_utc": "2025-12-30T20:22:30Z",
+    "task_provided_figures": {
+      "tvl_usd": 302900,
+      "age_days": 212,
+      "note": "Both figures are a somewhat earlier snapshot than this capture (228 days old, TVL now $251,417). The gap is consistent with normal WCC price drift over ~2-3 weeks, not an anomaly."
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "compiler_settings": {
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "evmVersion": "paris",
+    "outputSelection": {
+      "*": {
+        "*": [
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "devdoc",
+          "userdoc",
+          "metadata",
+          "abi"
+        ]
+      }
+    }
+  },
+  "files": [
+    {
+      "path": "@openzeppelin/contracts/access/Ownable.sol"
+    },
+    {
+      "path": "@openzeppelin/contracts/interfaces/IERC1363.sol"
+    },
+    {
+      "path": "@openzeppelin/contracts/interfaces/IERC165.sol"
+    },
+    {
+      "path": "@openzeppelin/contracts/interfaces/IERC20.sol"
+    },
+    {
+      "path": "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+    },
+    {
+      "path": "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol"
+    },
+    {
+      "path": "@openzeppelin/contracts/utils/Context.sol"
+    },
+    {
+      "path": "@openzeppelin/contracts/utils/introspection/IERC165.sol"
+    },
+    {
+      "path": "@openzeppelin/contracts/utils/Pausable.sol"
+    },
+    {
+      "path": "@openzeppelin/contracts/utils/ReentrancyGuard.sol"
+    },
+    {
+      "path": "contracts/StakingRewardsWCC.sol"
+    }
+  ]
+}
