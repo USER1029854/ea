@@ -187,8 +187,12 @@ Everything below is a genuine blind spot from this session, not a soft-pedaled w
 ## Package contents
 
 - `README.md` — this document
-- `sources/StakingRewardsWCC.sol` — target, verified source
-- `sources/StakingRewardsWCC.etherscan-getsourcecode.json` — raw Etherscan response (ABI, compiler settings, constructor args) for the target
-- `sources/wCC.sol` — WCC token, verified source (Hardhat-flattened; includes the full LayerZero OFT/AccessControl dependency tree it was compiled with)
-- `sources/wCC.etherscan-getsourcecode.json` — raw Etherscan response for WCC
+- `sources/StakingRewardsWCC.sol` — target, verified source, single file, project logic only (start here)
+- `sources/wCC.sol` — WCC token, verified source, single file, Hardhat-flattened (start here for the token)
+- `sources/*.etherscan-getsourcecode.json` — raw Etherscan API responses (ABI, compiler settings, constructor args, license) for each contract, for provenance
+- `sources/StakingRewardsWCC-full/` — the same target source **split into its real file tree** (11 files: the project contract under `contracts/`, plus every imported OpenZeppelin file under `@openzeppelin/...`, exactly as compiled)
+- `sources/wCC-full/` — WCC split into its real file tree (44 files: `src/wCC.sol` is the project-specific contract; everything else is the LayerZero OApp/OFT/protocol dependency tree under `@layerzerolabs/...` plus OpenZeppelin's `AccessControl`/`ERC20`/`Pausable`/`Ownable` under `@openzeppelin/...`)
+- `sources/wCC-full/MANIFEST.json`, `sources/StakingRewardsWCC-full/MANIFEST.json` — per-file listing; the wCC manifest includes the **exact pinned package version compiled against each dependency** (e.g. `@openzeppelin/contracts/access/Ownable.sol@v5.4.0`, `@layerzerolabs/lz-evm-oapp-v2/contracts/oft/OFT.sol@v2.3.44`), so any file can be diffed directly against its real tagged upstream release to confirm it hasn't been altered from the known-good original
 - `data/live_state.json` — every on-chain read in this mapping, machine-readable, with the exact block/values behind every number quoted above
+
+The single-file versions and the split trees carry the same compiled source (`StakingRewardsWCC.sol` is byte-identical to its split counterpart; `wCC.sol`'s split files are exact per-dependency slices of the same Hardhat-flattened text, whitespace at slice boundaries aside) — the split just makes every dependency individually browsable and version-diffable instead of buried in one flattened file or a JSON blob.
